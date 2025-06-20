@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | WorkLens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FD5623',
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-padding-top: 80px;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- Sticky Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur-sm transition-all duration-300 py-4 h-20">
+        <div class="container mx-auto px-6 flex justify-between items-center h-full">
+            <a href="index.html" class="flex items-center">
+                <img src="Worklens_Logo_New-nobg.png" alt="WorkLens Logo" class="h-14">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+                <a href="about.html" class="text-primary font-medium transition">About Us</a>
+                <a href="index.html#services" class="text-gray-700 hover:text-primary transition">Services</a>
+                <a href="not-found.html" class="text-gray-700 hover:text-primary transition">Explore</a>
+                <a href="not-found.html" class="text-gray-700 hover:text-primary transition">Referral</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-primary transition">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
+            <div class="container mx-auto px-6 py-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary transition">Home</a>
+                <a href="about.html" class="block py-2 text-primary font-medium transition">About Us</a>
+                <a href="index.html#services"
+                    class="block py-2 text-gray-700 hover:text-primary transition">Services</a>
+                <a href="not-found.html" class="block py-2 text-gray-700 hover:text-primary transition">Explore</a>
+                <a href="not-found.html" class="block py-2 text-gray-700 hover:text-primary transition">Referral</a>
+                <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-primary transition">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[50vh] bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/60 z-0"></div>
+
+        <!-- Text Content -->
+        <div
+            class="relative z-10 container mx-auto px-6 text-white text-center flex flex-col justify-center items-center min-h-[80vh]">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
+                About WorkLens
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 max-w-2xl">
+                Redefining HR solutions for the modern workplace
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Intro Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Who We Are</h2>
+                <div class="w-16 h-1 bg-red-500 mx-auto mt-2 mb-8"></div>
+
+                <p class="text-gray-600 mb-8 text-lg">WorkLens is a forward-thinking HR solutions provider dedicated to
+                    transforming the way companies and professionals connect. Founded in 2023, we've grown from a small
+                    consultancy to a full-service HR partner for businesses across multiple industries.</p>
+                <p class="text-gray-600 text-lg">Our team of HR experts combines deep industry knowledge with innovative
+                    technology to deliver solutions that drive real business results while fostering meaningful career
+                    growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 md:mb-4">What We Do</h2>
+            <div class="w-16 h-1 bg-red-500 mx-auto mt-2 mb-12"></div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-tie text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Strategic Talent Acquisition</h3>
+                    <p class="text-gray-600">We don't just fill positions - we help you build high-performing teams
+                        through our comprehensive recruitment process that identifies both skills and cultural fit.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users-cog text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">HR Outsourcing</h3>
+                    <p class="text-gray-600">Our HR outsourcing services streamline your operations, reduce costs, and
+                        ensure compliance while allowing you to focus on your core business objectives.</p>
+                </div>
+                <div
+                    class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-briefcase text-primary text-xl md:text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Job Consultancy</h3>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Expert career guidance and job placement
+                        services for professionals at all levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section (Different Design) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 md:mb-4">Our Values in Action</h2>
+            <div class="w-16 h-1 bg-red-500 mx-auto mt-2 mb-12 md:mb-16"></div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center mb-12">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:pr-8">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-shield-alt text-primary text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-3 text-center md:text-left">Integrity & Transparency</h3>
+                        <p class="text-gray-600">We maintain the highest ethical standards in all our interactions. Our
+                            clients trust us because we're honest about what we can deliver and transparent about our
+                            processes.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center mb-12">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:pr-8 order-1 md:order-none">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-trophy text-primary text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 order-2">
+                        <h3 class="text-xl font-bold mb-3 text-center md:text-left">Excellence in Execution</h3>
+                        <p class="text-gray-600">From initial consultation to final delivery, we're committed to
+                            providing exceptional service. Our team goes above and beyond to ensure every engagement is
+                            successful.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:pr-8">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-handshake text-primary text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-3 text-center md:text-left">Long-Term Relationships</h3>
+                        <p class="text-gray-600">We measure our success by the lasting partnerships we build. Over 80%
+                            of our clients have worked with us for more than three years, a testament to our
+                            relationship-focused approach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 md:mb-4">What Our Clients Say</h2>
+            <div class="w-16 h-1 bg-red-500 mx-auto mt-2 mb-12 md:mb-16"></div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">HR Director, TechForward</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"WorkLens transformed our recruitment process. Their understanding
+                        of our company culture helped us find candidates who not only had the right skills but were
+                        perfect cultural fits."</p>
+                    <div class="mt-4 text-primary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-gray-500 text-sm">CEO, GreenSolutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The HR outsourcing services from WorkLens allowed us to scale
+                        quickly without worrying about compliance issues. Their team became an extension of our own."
+                    </p>
+                    <div class="mt-4 text-primary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Emily Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Talent Acquisition, HealthPlus</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Their career coaching program helped us retain top talent by
+                        providing clear growth paths for our employees. The impact on our retention rates was
+                        immediate."</p>
+                    <div class="mt-4 text-primary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">David Wilson</h4>
+                            <p class="text-gray-500 text-sm">COO, Finova</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"WorkLens doesn't just understand HR - they understand business.
+                        Their solutions are always aligned with our strategic objectives and deliver measurable ROI."
+                    </p>
+                    <div class="mt-4 text-primary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16">Our Trusted Partners</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=TechCorp" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=GreenSolutions" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=Finova" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=HealthPlus" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=InnovateCo" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=DataSystems" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=CloudNine" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition">
+                    <img src="https://via.placeholder.com/150x60?text=FutureTech" alt="Client Logo"
+                        class="h-10 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo -->
+                <div class="lg:col-span-1 flex flex-col justify-center items-center">
+                    <a href="index.html" class="flex items-center mb-4">
+                        <img src="Logo-Inverted-NoBg.png" alt="WorkLens Logo" class="h-20">
+                    </a>
+                    <p class="text-gray-400 text-sm mt-6">Modern HR solutions for the future of work.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-center">Quick Links</h3>
+                    <ul class="space-y-2 text-center">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition text-sm">About Us</a>
+                        </li>
+                        <li><a href="index.html#services"
+                                class="text-gray-400 hover:text-white transition text-sm">Services</a></li>
+                        <li><a href="not-found.html"
+                                class="text-gray-400 hover:text-white transition text-sm">Explore</a>
+                        </li>
+                        <li><a href="not-found.html"
+                                class="text-gray-400 hover:text-white transition text-sm">Referral</a></li>
+                        <li><a href="index.html#contact"
+                                class="text-gray-400 hover:text-white transition text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="md:col-span-2 lg:col-span-1 gap-3 flex flex-col">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-primary mr-3"></i>
+                            <a href="tel:+918487847850" class="text-gray-400 text-base">+91 8487847850</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-3"></i>
+                            <a href="mailto:contact@worklens.co.in"
+                                class="text-gray-400 text-base">contact@worklens.co.in</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="md:col-span-2 lg:col-span-1 md:mt-8 lg:mt-0">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/918487847850" target="_blank"
+                            class="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-whatsapp text-sm md:text-base"></i>
+                        </a>
+                        <a href="https://www.facebook.com/yourprofile" target="_blank"
+                            class="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-facebook-f text-sm md:text-base"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yourprofile" target="_blank"
+                            class="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-instagram text-sm md:text-base"></i>
+                        </a>
+                        <a href="https://twitter.com/yourprofile" target="_blank"
+                            class="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-twitter text-sm md:text-base"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
+                            class="w-8 h-8 md:w-10 md:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-linkedin-in text-sm md:text-base"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 WorkLens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let menuOpen = false;
+
+        mobileMenuButton.addEventListener('click', function () {
+            if (menuOpen) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuButton.innerHTML = '<i class="fas fa-times text-xl"></i>';
+            }
+            menuOpen = !menuOpen;
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+                menuOpen = false;
+            });
+        });
+
+        // Sticky navbar
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('bg-white/90');
+                navbar.classList.add('bg-white');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.add('bg-white/90');
+                navbar.classList.remove('bg-white');
+            }
+        });
+    </script>
+</body>
+
+</html>
