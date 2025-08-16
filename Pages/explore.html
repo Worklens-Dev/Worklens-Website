@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find The Job That Suits You</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Manrope', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#FD5623',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-gray-50 min-h-screen">
+    <nav id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur-sm transition-all duration-300 py-4 h-24">
+        <div class="container mx-auto px-6 flex justify-between items-center h-full">
+            <a href="#home" class="flex items-center">
+                <img src="/Assets/Worklens_Logo_New-nobg.png" alt="WorkLens Logo" class="h-14 ml-10 my-4">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-primary transition">About Us</a>
+                <a href="../index.html#services" class="text-gray-700 hover:text-primary transition">Services</a>
+                <a href="not-found.html" class="text-[#FD5623] hover:text-primary transition">Explore</a>
+                <!-- <a href="not-found.html" class="text-gray-700 hover:text-primary transition">Referral</a> -->
+                <a href="../index.html#contact" class="text-gray-700 hover:text-primary transition">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
+            <div class="container mx-auto px-6 py-4">
+                <a href="../index.html" class="block py-2 text-gray-700 hover:text-primary transition">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-primary transition">About Us</a>
+                <a href="../index.html#services" class="block py-2 text-gray-700 hover:text-primary transition">Services</a>
+                <a href="not-found.html" class="block py-2 text-[#FD5623] hover:text-primary transition">Explore</a>
+                <a href="not-found.html" class="block py-2 text-gray-700 hover:text-primary transition">Referral</a>
+                <a href="../index.html#contact" class="block py-2 text-gray-700 hover:text-primary transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto py-18 md:py-28 bg-white">
+        <!-- Main Heading -->
+        <h1 class="text-2xl md:text-2xl lg:text-4xl font-bold text-center text-gray-800 mb-4">
+            Find The Job That Suits You
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-lg md:text-xl text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+            Discover amazing career opportunities from our curated job listings
+        </p>
+
+        <!-- Loading State -->
+        <div id="loading" class="text-center py-8">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+            <p class="mt-2 text-gray-600">Loading job listings...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="hidden text-center py-8">
+            <div class="bg-red-50 border border-red-200 rounded-lg p-6 max-w-md mx-auto">
+                <p class="text-red-700">Unable to load job listings. Please try again later.</p>
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div id="table-container" class="hidden p-6">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table id="jobs-table" class="w-full">
+                        <thead class="bg-primary text-white">
+                            <!-- Table headers will be populated by JavaScript -->
+                        </thead>
+                        <tbody>
+                            <!-- Table rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script crossorigin="anonymous" src="//unpkg.com/same-runtime/dist/index.global.js"></script>
+    <script src="../Scripts/test.js"></script>
+</body>
+
+</html>

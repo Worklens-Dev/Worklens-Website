@@ -39,15 +39,14 @@
     <!-- Sticky Navbar -->
     <nav id="navbar" class="fixed w-full z-50 bg-white/90 backdrop-blur-sm transition-all duration-300 py-4 h-24">
         <div class="container mx-auto px-6 flex justify-between items-center h-full">
-            <a href="#home" class="flex items-center">
-                <img src="Worklens_Logo_New-nobg.png" alt="WorkLens Logo" class="h-14 ml-10 my-4">
+            <a href="index.html" class="flex items-center">
+                <img src="/Assets/Worklens_Logo_New-nobg.png" alt="WorkLens Logo" class="h-14 ml-10 my-4">
             </a>
             <div class="hidden md:flex space-x-8">
-                <a href="#home" class="text-gray-700 hover:text-primary transition">Home</a>
-                <a href="about.html" class="text-gray-700 hover:text-primary transition">About Us</a>
+                <a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+                <a href="/Pages/about.html" class="text-gray-700 hover:text-primary transition">About Us</a>
                 <a href="#services" class="text-gray-700 hover:text-primary transition">Services</a>
-                <a href="not-found.html" class="text-gray-700 hover:text-primary transition">Explore</a>
-                <a href="not-found.html" class="text-gray-700 hover:text-primary transition">Referral</a>
+                <a href="/Pages/explore.html" class="text-gray-700 hover:text-primary transition">Explore</a>
                 <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact Us</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-gray-700">
@@ -58,18 +57,18 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
             <div class="container mx-auto px-6 py-4">
-                <a href="#home" class="block py-2 text-gray-700 hover:text-primary transition">Home</a>
-                <a href="about.html" class="block py-2 text-gray-700 hover:text-primary transition">About Us</a>
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary transition">Home</a>
+                <a href="/Pages/about.html" class="block py-2 text-gray-700 hover:text-primary transition">About Us</a>
                 <a href="#services" class="block py-2 text-gray-700 hover:text-primary transition">Services</a>
-                <a href="not-found.html" class="block py-2 text-gray-700 hover:text-primary transition">Explore</a>
-                <a href="not-found.html" class="block py-2 text-gray-700 hover:text-primary transition">Referral</a>
+                <a href="/Pages/explore.html" class="block py-2 text-gray-700 hover:text-primary transition">Explore</a>
+                <!-- <a href="/Pages/not-found.html" class="block py-2 text-gray-700 hover:text-primary transition">Referral</a> -->
                 <a href="#contact" class="block py-2 text-gray-700 hover:text-primary transition">Contact Us</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('home2.png')">
+    <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('/Assets/home2.png')">
         <!-- <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div> -->
         <div
             class="absolute top-36 left-1/2 transform -translate-x-1/2 z-10 text-black text-center px-6 w-full max-w-4xl">
@@ -160,7 +159,7 @@
                         <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-4">Looking for a Job?</h3>
                         <p class="mb-4 md:mb-6">Let us help you find the perfect role that matches your skills and
                             aspirations.</p>
-                        <a href="not-found.html"
+                        <a href="/Pages/explore.html"
                             class="bg-primary hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full transition inline-block self-start">Start
                             Here</a>
                     </div>
@@ -176,7 +175,7 @@
                         <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-4">Looking to Hire?</h3>
                         <p class="mb-4 md:mb-6">Find the best talent for your organization with our expert recruitment
                             services.</p>
-                        <a href="not-found.html"
+                        <a href="#contact"
                             class="bg-primary hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full transition inline-block self-start">Let's
                             Talk</a>
                     </div>
@@ -193,7 +192,7 @@
             <p class="mt-4 text-lg text-gray-600 mb-2 md:mb-20 text-center">
                 Comprehensive HR solutions tailored to meet your unique business needs and career goals.
             </p>
-            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+            <div class="grid md:grid-cols-4 gap-6 md:gap-8">
                 <!-- Service 1 -->
                 <div
                     class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
@@ -211,9 +210,9 @@
                         <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Specialized Hiring
                         </li>
                     </ul>
-                    <a href="#"
+                    <!-- <a href=""
                         class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
-                        more <i class="fas fa-arrow-right ml-2"></i></a>
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
                 </div>
 
                 <!-- Service 2 -->
@@ -222,6 +221,8 @@
                     <div
                         class="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 md:mb-6">
                         <i class="fas fa-users text-primary text-xl md:text-2xl"></i>
+                        <!-- <i class="fa-solid fa-user text-primary text-xl md:text-2xl"></i> -->
+                        <!-- <i class="fa-regular fa-user text-primary text-xl md:text-2xl"></i> -->
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">HR Outsourcing</h3>
                     <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Comprehensive HR services so you can
@@ -234,9 +235,9 @@
                         <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Compliance Support
                         </li>
                     </ul>
-                    <a href="#"
+                    <!-- <a href="#"
                         class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
-                        more <i class="fas fa-arrow-right ml-2"></i></a>
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
                 </div>
 
                 <!-- Service 3 -->
@@ -255,9 +256,30 @@
                         <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Interview Preparation
                         </li>
                     </ul>
-                    <a href="#"
+                    <!-- <a href="#"
                         class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
-                        more <i class="fas fa-arrow-right ml-2"></i></a>
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                        <!-- <i class="fa-solid fa-users text-primary text-xl md:text-2xl"></i> -->
+                        <i class="fa-solid fa-people-group text-primary text-xl md:text-2xl"></i>
+
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Staff Outsourcing</h3>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">We deliver trusted staff outsourcing solutions, offering skilled professionals while optimizing costs.</p>
+                    <ul class="mt-6 text-left space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Pool of skilled professionals</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Flexible staffing solutions</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Cost-efficient workforce</li>
+                    </ul>
+                    <!-- <a href="#"
+                        class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
                 </div>
             </div>
         </div>
@@ -323,7 +345,7 @@
                 <!-- Logo -->
                 <div class="lg:col-span-1 flex justify-center items-center flex-col">
                     <a href="#home" class="flex items-center mb-4">
-                        <img src="Logo-Inverted-NoBg.png" alt="WorkLens Logo" class="h-24">
+                        <img src="/Assets/Logo-Inverted-NoBg.png" alt="WorkLens Logo" class="h-24">
                     </a>
                     <p class="text-gray-400 text-sm mt-6">Empowering Businesses with Exceptional Talent.</p>
                 </div>
@@ -333,15 +355,14 @@
                     <h3 class="text-lg font-semibold mb-4 text-center">Quick Links</h3>
                     <ul class="space-y-2 text-center">
                         <li><a href="#home" class="text-gray-400 hover:text-white transition text-sm">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white transition text-sm">About Us</a>
+                        <li><a href="/Pages/about.html" class="text-gray-400 hover:text-white transition text-sm">About
+                                Us</a>
                         </li>
                         <li><a href="#services" class="text-gray-400 hover:text-white transition text-sm">Services</a>
                         </li>
-                        <li><a href="not-found.html"
+                        <li><a href="/Pages/explore.html"
                                 class="text-gray-400 hover:text-white transition text-sm">Explore</a>
                         </li>
-                        <li><a href="not-found.html"
-                                class="text-gray-400 hover:text-white transition text-sm">Referral</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition text-sm">Contact Us</a>
                         </li>
                     </ul>
