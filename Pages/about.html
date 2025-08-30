@@ -4,34 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | WorkLens</title>
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <title>About WorkLens | HR Outsourcing & Recruitment Experts</title>
+
+    <!-- ✅ Primary Meta Tags -->
+    <meta name="title" content="About WorkLens | HR Outsourcing & Recruitment Experts">
+    <meta name="description"
+        content="Learn about WorkLens – a modern HR solutions provider redefining talent acquisition, HR outsourcing, and job consultancy. Founded in 2023, we help businesses build high-performing teams while guiding professionals in their careers.">
+    <meta name="keywords"
+        content="WorkLens, about WorkLens, HR solutions, talent acquisition, HR outsourcing, job consultancy, career growth, recruitment services">
+    <meta name="author" content="WorkLens">
+    <meta name="robots" content="index, follow">
+
+    <!-- ✅ Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.worklens.co.in/Pages/about.html">
+    <meta property="og:title" content="About WorkLens | HR Outsourcing & Recruitment Experts">
+    <meta property="og:description"
+        content="WorkLens is redefining HR solutions with strategic recruitment, outsourcing, and consultancy. Discover who we are and our mission to transform the future of work.">
+    <meta property="og:image" content="https://www.worklens.co.in/Assets/Worklens_Logo_New-nobg.png">
+
+    <!-- ✅ Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.worklens.co.in/Pages/about.html">
+    <meta name="twitter:title" content="About WorkLens | HR Outsourcing & Recruitment Experts">
+    <meta name="twitter:description"
+        content="Get to know WorkLens – a people-first HR partner offering talent acquisition, HR outsourcing, and consultancy solutions.">
+    <meta name="twitter:image" content="https://www.worklens.co.in/Assets/Worklens_Logo_New-nobg.png">
+
+    <!-- ✅ Canonical -->
+    <link rel="canonical" href="https://www.worklens.co.in/Pages/about.html" />
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" href="/favicon.png" type="image/png" />
+
+    <!-- ✅ Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ✅ Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        primary: '#FD5623',
-                    },
-                    fontFamily: {
-                        sans: ['Manrope', 'sans-serif'],
-                    },
+                    colors: { primary: '#FD5623' },
+                    fontFamily: { sans: ['Manrope', 'sans-serif'] },
                 }
             }
         }
     </script>
+
+    <!-- ✅ Extra -->
     <style>
         html {
             scroll-padding-top: 80px;
         }
     </style>
 </head>
+
 
 <body class="font-sans">
     <!-- Sticky Navbar -->
@@ -60,7 +93,8 @@
                 <a href="../index.html#services"
                     class="block py-2 text-gray-700 hover:text-primary transition">Services</a>
                 <a href="/Pages/explore.html" class="block py-2 text-gray-700 hover:text-primary transition">Explore</a>
-                <a href="../index.html#contact" class="block py-2 text-gray-700 hover:text-primary transition">Contact Us</a>
+                <a href="../index.html#contact" class="block py-2 text-gray-700 hover:text-primary transition">Contact
+                    Us</a>
             </div>
         </div>
     </nav>
@@ -109,25 +143,55 @@
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 md:mb-4">What We Do</h2>
             <div class="w-16 h-1 bg-red-500 mx-auto mt-2 mb-12"></div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-4 gap-6 md:gap-8">
+                <!-- Service 1 -->
                 <div
-                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-user-tie text-primary text-2xl"></i>
+                    class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-user-tie text-primary text-xl md:text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Strategic Talent Acquisition</h3>
-                    <p class="text-gray-600">We don't just fill positions - we help you build high-performing teams
-                        through our comprehensive recruitment process that identifies both skills and cultural fit.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Talent Acquisition</h3>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">End-to-end recruitment solutions to find
+                        the perfect candidates for your organization.</p>
+                    <ul class="mt-6 text-left space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Executive Search</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Volume Recruitment
+                        </li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Specialized Hiring
+                        </li>
+                    </ul>
+                    <!-- <a href=""
+                        class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
                 </div>
+
+                <!-- Service 2 -->
                 <div
-                    class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-users-cog text-primary text-2xl"></i>
+                    class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-users text-primary text-xl md:text-2xl"></i>
+                        <!-- <i class="fa-solid fa-user text-primary text-xl md:text-2xl"></i> -->
+                        <!-- <i class="fa-regular fa-user text-primary text-xl md:text-2xl"></i> -->
                     </div>
-                    <h3 class="text-xl font-bold mb-3">HR Outsourcing</h3>
-                    <p class="text-gray-600">Our HR outsourcing services streamline your operations, reduce costs, and
-                        ensure compliance while allowing you to focus on your core business objectives.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">HR Outsourcing</h3>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Comprehensive HR services so you can
+                        focus on your core business operations.</p>
+                    <ul class="mt-6 text-left space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Payroll Management
+                        </li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Employee Relations
+                        </li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Compliance Support
+                        </li>
+                    </ul>
+                    <!-- <a href="#"
+                        class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
                 </div>
+
+                <!-- Service 3 -->
                 <div
                     class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
                     <div
@@ -137,6 +201,40 @@
                     <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Job Consultancy</h3>
                     <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Expert career guidance and job placement
                         services for professionals at all levels.</p>
+                    <ul class="mt-6 text-left space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Career Coaching</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Resume Building</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Interview Preparation
+                        </li>
+                    </ul>
+                    <!-- <a href="#"
+                        class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                        <!-- <i class="fa-solid fa-users text-primary text-xl md:text-2xl"></i> -->
+                        <i class="fa-solid fa-people-group text-primary text-xl md:text-2xl"></i>
+
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Staff Outsourcing</h3>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">We deliver trusted staff outsourcing
+                        solutions, offering skilled professionals while optimizing costs.</p>
+                    <ul class="mt-6 text-left space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Pool of skilled
+                            professionals</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Flexible staffing
+                            solutions</li>
+                        <li class="flex items-center"><span class="text-orange-500 mr-2">✔</span> Cost-efficient
+                            workforce</li>
+                    </ul>
+                    <!-- <a href="#"
+                        class="text-primary font-medium inline-flex items-center text-sm md:text-base mt-8">Learn
+                        more <i class="fas fa-arrow-right ml-2"></i></a> -->
                 </div>
             </div>
         </div>
@@ -193,7 +291,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 md:py-24 bg-gray-50">
+    <!-- <section class="py-16 md:py-24 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 md:mb-4">What Our Clients Say</h2>
             <div class="w-16 h-1 bg-red-500 mx-auto mt-2 mb-12 md:mb-16"></div>
@@ -289,7 +387,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Clients Section -->
     <!-- <section class="py-16 md:py-24 bg-white">
@@ -348,13 +446,13 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4 text-center">Quick Links</h3>
                     <ul class="space-y-2 text-center">
-                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition text-sm">Home</a></li>
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition text-sm">Home</a>
+                        </li>
                         <li><a href="about.html" class="text-gray-400 hover:text-white transition text-sm">About Us</a>
                         </li>
                         <li><a href="../index.html#services"
                                 class="text-gray-400 hover:text-white transition text-sm">Services</a></li>
-                        <li><a href="explore.html"
-                                class="text-gray-400 hover:text-white transition text-sm">Explore</a>
+                        <li><a href="explore.html" class="text-gray-400 hover:text-white transition text-sm">Explore</a>
                         </li>
                         <li><a href="../index.html#contact"
                                 class="text-gray-400 hover:text-white transition text-sm">Contact Us</a></li>

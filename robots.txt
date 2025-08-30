@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Don’t index error page
+Disallow: /Pages/not-found.html
+
+# Point search engines to sitemap
+Sitemap: https://www.worklens.co.in/sitemap.xml
